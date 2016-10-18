@@ -1,0 +1,110 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('./img/main-bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-nav {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 900;
+  padding-bottom: 30vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 3vh;
+}
+
+.nav-item {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.jumbotron {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction:column;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 48vh;
+}
+
+.down-arrow {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 100%;
+  color: rgb(80, 80, 80);
+  background-color: #fff;
+  background-image: url('./img/arrow_down.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.jumbotron h1 {
+  font-size: 64px;
+}
+
+.nav-icon {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.ham {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .header-nav {
+    display: inline-block;
+    position: relative;
+  }
+  h1 {
+    padding-top: .4vh;
+  }
+  .nav-item {
+    display: none;
+  }
+  .nav-icon {
+    display: inline-block;
+    /*position: absolute;*/
+  }
+
+  .twitter {
+    position: absolute;
+    right: 40px;
+  }
+
+  .facebook {
+    position: absolute;
+    right: 20px;
+  }
+
+  .ham {
+    position: absolute;
+    left: 20px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 40px;
+    height:40px;
+  }
+
+  .fa {
+    margin-top: 4px;
+  }
+}
